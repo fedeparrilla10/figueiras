@@ -1,9 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout title="Casas das Figueiras">
   <main>
-    <h1>Hello World</h1>
+    <div class="relative">
+      <img src="/mainslider/banner1.png" alt="" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center text-gray-50 uppercase mb-48">
+          <p class="text-4xl">{t('header.welcome')}</p>
+          <h1 class="text-5xl font-bold">{t('header.title')}</h1>
+          <p class="text-2xl pt-2">{t('header.subtitle')}</p>
+        </div>
+      </div>
+    </div>
   </main>
 </Layout>
