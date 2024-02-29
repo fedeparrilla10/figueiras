@@ -9,3 +9,8 @@ export interface LangsI {
   lang: Langs;
   route: string;
 }
+
+export interface Brands {
+  name: string;
+  src: string;
+}
