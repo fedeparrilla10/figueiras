@@ -4,6 +4,7 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import RentForm from '../components/RentForm.astro';
 import Brands from '../components/Brands.astro';
 import RiaEoRibadeo from '../components/RiaEoRibadeo.astro';
+import House from '../components/House.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -31,6 +32,10 @@ const t = useTranslations(lang);
 
   <section class="pt-10">
     <RiaEoRibadeo />
+  </section>
+
+  <section class="pt-32">
+    <House />
   </section>
 </Layout>
 

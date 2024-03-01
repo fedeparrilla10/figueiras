@@ -14,3 +14,13 @@ export interface Brands {
   name: string;
   src: string;
 }
+
+export interface House {
+  id: number;
+  title: string;
+  backgroundPc: string;
+  backgroundMobile: string;
+  description: string;
+  registerNumber: string;
+  bookingImg: string;
+}
