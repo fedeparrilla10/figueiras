@@ -1,0 +1,28 @@
+---
+import { lastNews } from '../data/news.ts';
+---
+
+<div class="flex flex-col gap-12">
+  <h3 class="uppercase text-2xl md:text-4xl text-center text-sky-700">
+    <span class="font-bold">Últimas</span> Noticias
+  </h3>
+
+  <div class="flex flex-col md:flex-row gap-6">
+    {
+      lastNews.map((news) => {
+        return (
+          <div class="flex flex-col w-[24rem] gap-4">
+            <div class="flex flex-col gap-2">
+              <img src={news.img} alt={news.title} />
+              <h4 class="font-bold text-sky-700 text-lg">{news.title}</h4>
+            </div>
+            <div class="flex gap-1 items-center">
+              <a class="uppercase text-sm text-sky-600">Ver más</a>
+              <img src="bluelink.svg" alt="" class="w-3" />
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</div>

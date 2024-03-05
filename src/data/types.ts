@@ -3,7 +3,7 @@ export interface NavBarItems {
   title: string;
 }
 
-export type Langs = 'Español' | 'English' | 'Deustch';
+type Langs = 'Español' | 'English' | 'Deustch';
 
 export interface LangsI {
   lang: Langs;
@@ -35,4 +35,23 @@ export interface Review {
   name: string;
   house: FigueirasHouse;
   date: string;
+}
+
+export interface News {
+  id: number;
+  img: string;
+  title: string;
+}
+
+type PaymentMethods =
+  | 'Visa'
+  | 'Mastercard'
+  | 'PayPal'
+  | 'American Express'
+  | 'Discover';
+
+export interface Payments {
+  id: number;
+  method: PaymentMethods;
+  img: string;
 }

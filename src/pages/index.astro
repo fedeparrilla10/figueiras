@@ -7,6 +7,8 @@ import RiaEoRibadeo from '../components/RiaEoRibadeo.astro';
 import House from '../components/House.astro';
 import Reviews from '../components/Reviews.astro';
 import OtherPlaces from '../components/OtherPlaces.astro';
+import LastNews from '../components/LastNews.astro';
+import Footer from '../components/Footer.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -47,6 +49,12 @@ const t = useTranslations(lang);
   <section class="pt-12">
     <OtherPlaces />
   </section>
-</Layout>
 
-<section class="mt-80">Footer</section>
+  <section class="pt-12">
+    <LastNews />
+  </section>
+
+  <footer class="pt-12">
+    <Footer />
+  </footer>
+</Layout>
