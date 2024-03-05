@@ -24,3 +24,15 @@ export interface House {
   registerNumber: string;
   bookingImg: string;
 }
+
+export type FigueirasHouse = 'Alameda 23' | 'Jovellanos 19' | 'Alameda 33';
+
+export interface Review {
+  id: number;
+  review: string;
+  title: string;
+  description: string;
+  name: string;
+  house: FigueirasHouse;
+  date: string;
+}

@@ -5,6 +5,8 @@ import RentForm from '../components/RentForm.astro';
 import Brands from '../components/Brands.astro';
 import RiaEoRibadeo from '../components/RiaEoRibadeo.astro';
 import House from '../components/House.astro';
+import Reviews from '../components/Reviews.astro';
+import OtherPlaces from '../components/OtherPlaces.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -36,6 +38,14 @@ const t = useTranslations(lang);
 
   <section class="pt-32">
     <House />
+  </section>
+
+  <section class="pt-12">
+    <Reviews />
+  </section>
+
+  <section class="pt-12">
+    <OtherPlaces />
   </section>
 </Layout>
 
