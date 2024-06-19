@@ -3,22 +3,22 @@ import type { Brands } from './types';
 export const brands: Brands[] = [
   {
     name: 'Vrbo',
-    src: 'vrbo.webp',
+    src: '/figueiras/vrbo.webp',
   },
   {
     name: 'AirBnB',
-    src: 'airbnb.webp',
+    src: '/figueiras/airbnb.webp',
   },
   {
     name: 'Booking',
-    src: 'booking.webp',
+    src: '/figueiras/booking.webp',
   },
   {
     name: 'HomeToGo',
-    src: 'hometogo.webp',
+    src: '/figueiras/hometogo.webp',
   },
   {
     name: 'Rentalia',
-    src: 'rentalia.webp',
+    src: '/figueiras/rentalia.webp',
   },
 ];
